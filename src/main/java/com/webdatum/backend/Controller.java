@@ -15,4 +15,9 @@ public class Controller {
     public String home(){
         return "Home";
     }
+
+    @GetMapping("/api/health")
+    public String health() {
+        return "Backend is running";
+    }
 }
