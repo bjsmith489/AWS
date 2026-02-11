@@ -19,12 +19,16 @@ public class User {
     @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
+    private String role; // ADMIN or USER
+
     public User() {}
 
-    public User(String email, String password, String name) {
+    public User(String email, String password, String name, String role) {
         this.email = email;
         this.password = password;
         this.name = name;
+        this.role = role;
     }
 
     // Getters and setters
